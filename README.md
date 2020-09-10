@@ -4,5 +4,5 @@
 [ⓥⓘⓔⓦ ⓜⓞⓡⓔ](https://developer.android.com/guide/topics/ui/look-and-feel/themes)
 
 # 𝙼𝚢 𝙿𝚛𝚘𝚓𝚎𝚌𝚝
-[Alt Text](https://github.com/memorezasabana/Theme-And-Style/blob/master/SS%20Theme%20n%20Style/1.png)
-[Alt Text](https://github.com/memorezasabana/Theme-And-Style/blob/master/SS%20Theme%20n%20Style/2.png)
+![Alt Text](https://github.com/memorezasabana/Theme-And-Style/blob/master/SS%20Theme%20n%20Style/1.png)
+![Alt Text](https://github.com/memorezasabana/Theme-And-Style/blob/master/SS%20Theme%20n%20Style/2.png)
