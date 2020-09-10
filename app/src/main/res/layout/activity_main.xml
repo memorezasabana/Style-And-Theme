@@ -3,12 +3,17 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@drawable/bg">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
         <ImageView
             android:layout_width="match_parent"
@@ -18,10 +23,9 @@
             android:src="@drawable/pixel_google" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/TextContent.Small.White"
             android:layout_gravity="bottom"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:background="#4D000000"
             android:drawableLeft="@drawable/ic_collections_white_18dp"
@@ -30,51 +34,39 @@
             android:gravity="center_vertical"
             android:padding="8dp"
             android:text="@string/dummy_photos"
-            android:textAppearance="@style/TextAppearance.AppCompat.Small"
             android:textColor="@android:color/white" />
+        </FrameLayout>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            style="@style/TextContent.Black"
             android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/mplusbold"
             android:text="@string/dummy_value"
-            android:textColor="@android:color/black"
-            android:textSize="32sp" />
+            android:textSize="30sp" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            style="@style/TextContent.SubTitle"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:fontFamily="@font/mplusbold"
             android:text="@string/stock"
-            android:textSize="14sp" />
+            android:textSize="18sp" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            style="@style/TextContent"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:fontFamily="@font/mplusregular"
             android:lineSpacingMultiplier="1"
             android:text="@string/content_text"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            style="@style/TextContent.SubTitle"
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/mplusbold"
             android:text="@string/spesification"
-            android:textSize="14sp" />
+            android:textSize="18sp" />
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -87,21 +79,16 @@
             android:layout_marginBottom="8dp">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/activity_vertical_margin"
+                style="@style/TextSpec.Field"
                 android:fontFamily="@font/mplusbold"
                 android:text="@string/display"
-                android:textSize="14sp" />
+                android:textSize="17sp" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                style="@style/TextSpec.Value"
                 android:fontFamily="@font/mplusregular"
                 android:text="@string/content_specs_display"
-                android:textColor="@android:color/black"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -109,21 +96,16 @@
             android:layout_marginBottom="8dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/activity_vertical_margin"
+                style="@style/TextSpec.Field"
                 android:fontFamily="@font/mplusbold"
                 android:text="@string/size"
-                android:textSize="14sp" />
+                android:textSize="17sp" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                style="@style/TextSpec.Value"
                 android:fontFamily="@font/mplusregular"
                 android:text="@string/content_specs_size"
-                android:textColor="@android:color/black"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -131,33 +113,25 @@
             android:layout_marginBottom="8dp">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/activity_vertical_margin"
+                style="@style/TextSpec.Field"
                 android:fontFamily="@font/mplusbold"
                 android:text="@string/battery"
-                android:textSize="14sp" />
+                android:textSize="17sp" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                style="@style/TextSpec.Value"
                 android:fontFamily="@font/mplusregular"
                 android:text="@string/content_specs_battery"
-                android:textColor="@android:color/black"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
         </TableRow>
         </TableLayout>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            style="@style/TextContent.SubTitle"
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/mplusbold"
             android:text="@string/seller"
-            android:textSize="14sp" />
+            android:textSize="18sp" />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -173,9 +147,8 @@
                 android:layout_marginRight="@dimen/activity_horizontal_margin"/>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
+                style="@style/TextContent"
+                android:layout_toEndOf="@+id/profile_image"
                 android:layout_toRightOf="@id/profile_image"
                 android:fontFamily="@font/mplusbold"
                 android:text="@string/my_name"
@@ -184,12 +157,9 @@
         </RelativeLayout>
 
         <Button
-            android:layout_width="151dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            style="@style/ButtonGeneral"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
             android:background="@drawable/custom_button"
             android:fontFamily="@font/mplusbold"
             android:text="@string/buy"
